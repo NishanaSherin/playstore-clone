@@ -8,7 +8,22 @@ class GamesForuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: CarouselWidget(),
+      body: ListView(
+        children: [
+          const SizedBox(height: 10,),
+          Container(
+            height: 250,
+            child: CarouselWidget()),
+          const SizedBox(height: 10,),
+          ListTile(
+              leading:const Text("Sponsored .",style: TextStyle(fontSize: 10),) ,
+              title:const Text("Suggested for you",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              trailing: IconButton(onPressed: (){},icon: const Icon(Icons.more_vert),), 
+            ),
+          
+         
+        ],
+      ),
     );
   }
 }

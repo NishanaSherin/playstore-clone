@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(24)),
                   borderSide: BorderSide.none),
-              fillColor: Colors.grey,
+              fillColor: Color.fromARGB(255, 210, 209, 209),
               filled: true,
               prefixIcon: Icon(Icons.search),
               suffixIcon: Icon(Icons.mic)),
@@ -55,11 +55,12 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: screenlist[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
         iconSize: 20,
         backgroundColor: const Color.fromARGB(255, 195, 177, 193),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.games), label: "Games"),
+          BottomNavigationBarItem(icon: Icon(Icons.games,), label: "Games",),
           BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Apps"),
           BottomNavigationBarItem(icon: Icon(Icons.tag), label: "Offers"),
           BottomNavigationBarItem(

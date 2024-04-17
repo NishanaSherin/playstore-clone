@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:playstore_application/screens/examplescreen.dart';
 import 'package:playstore_application/screens/home_screen.dart';
-import 'package:playstore_application/widgets/card_widgets.dart';
 
 void main() {
   runApp(const MyApp());
