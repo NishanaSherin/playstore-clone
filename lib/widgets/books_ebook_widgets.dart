@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playstore_application/models/book_model.dart';
 
+// ignore: must_be_immutable
 class BookWidgets extends StatelessWidget {
   BookWidgets({super.key});
   List<BookModel> bookList = [

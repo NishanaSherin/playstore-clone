@@ -45,7 +45,7 @@ class CarouselWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(i.uptext,style: const TextStyle(backgroundColor: Color.fromARGB(255, 167, 165, 164)),),
+                  Text(i.uptext,style: const TextStyle(backgroundColor: Color.fromARGB(255, 201, 199, 199)),),
                   Padding(
                     padding: const EdgeInsets.only(top: 8,left: 8,right: 8),
                     child: Text(i.gname,style: const TextStyle(fontSize: 20,color: Colors.white,),),

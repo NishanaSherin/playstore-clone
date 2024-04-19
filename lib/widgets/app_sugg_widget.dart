@@ -73,6 +73,7 @@ List<AppSuggestingModel> appSList=[
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 3),
                   leading: Container(
                     height: 60,
                     width: 60,
@@ -101,6 +102,7 @@ List<AppSuggestingModel> appSList=[
                   ),
                 ),
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 3),
                   leading: Container(
                     height: 60,
                     width: 60,
@@ -129,6 +131,7 @@ List<AppSuggestingModel> appSList=[
                   ),
                 ),
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 3),
                   leading: Container(
                     height: 60,
                     width: 60,

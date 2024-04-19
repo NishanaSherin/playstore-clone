@@ -61,8 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
         iconSize: 20,
         backgroundColor: const Color.fromARGB(255, 191, 210, 232),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.games,), label: "Games",),
-          BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Apps"),
+          BottomNavigationBarItem(icon: Icon(Icons.sports_esports_outlined,), label: "Games",),
+          BottomNavigationBarItem(icon: Icon(Icons.grid_view_outlined), label: "Apps"),
           BottomNavigationBarItem(icon: Icon(Icons.local_offer_outlined), label: "Offers"),
           BottomNavigationBarItem(
               icon: Icon(Icons.book_outlined), label: "Books"),

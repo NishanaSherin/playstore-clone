@@ -54,6 +54,7 @@ class SuggestingWidgets extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 3),
                   leading: Container(
                     height: 60,
                     width: 60,

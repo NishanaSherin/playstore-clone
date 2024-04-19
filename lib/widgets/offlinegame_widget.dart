@@ -76,6 +76,7 @@ class OfflineGameWidgets extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 3),
                   leading: Container(
                     height: 60,
                     width: 60,
@@ -104,6 +105,7 @@ class OfflineGameWidgets extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 3),
                   leading: Container(
                     height: 60,
                     width: 60,
@@ -132,6 +134,7 @@ class OfflineGameWidgets extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 3),
                   leading: Container(
                     height: 60,
                     width: 60,
