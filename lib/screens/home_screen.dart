@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:playstore_application/screens/apps_screen/appcategoryscreen.dart';
-import 'package:playstore_application/screens/apps_screen/appforyou.dart';
-import 'package:playstore_application/screens/apps_screen/appkidscreen.dart';
+//import 'package:playstore_application/screens/apps_screen/appcategoryscreen.dart';
+//import 'package:playstore_application/screens/apps_screen/appforyou.dart';
+//import 'package:playstore_application/screens/apps_screen/appkidscreen.dart';
 import 'package:playstore_application/screens/apps_screen/apps_screen.dart';
-import 'package:playstore_application/screens/apps_screen/apptopscreen.dart';
-import 'package:playstore_application/screens/books_screen.dart';
+//import 'package:playstore_application/screens/apps_screen/apptopscreen.dart';
+import 'package:playstore_application/screens/books_screen/books_screen.dart';
 import 'package:playstore_application/screens/games_screen/games_screen.dart';
 import 'package:playstore_application/screens/offers_screen.dart';
 
@@ -47,10 +47,11 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {},
               icon: const Icon(Icons.notifications_outlined)),
           const CircleAvatar(
-              radius: 20,
+              radius: 18,
               backgroundImage: NetworkImage(
                 "https://tse4.explicit.bing.net/th?id=OIP.QJflWTxmsPT-yJcHCnabEwHaHk&pid=Api&P=0&h=220",
-              ))
+              )),
+              const SizedBox(width: 7,),
         ],
       ),
       body: screenlist[_selectedIndex],
@@ -58,11 +59,11 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
         iconSize: 20,
-        backgroundColor: const Color.fromARGB(255, 195, 177, 193),
+        backgroundColor: const Color.fromARGB(255, 191, 210, 232),
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.games,), label: "Games",),
           BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Apps"),
-          BottomNavigationBarItem(icon: Icon(Icons.tag), label: "Offers"),
+          BottomNavigationBarItem(icon: Icon(Icons.local_offer_outlined), label: "Offers"),
           BottomNavigationBarItem(
               icon: Icon(Icons.book_outlined), label: "Books"),
         ],

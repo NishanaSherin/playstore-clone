@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:playstore_application/models/carousel_model.dart';
 
+// ignore: must_be_immutable
 class CarouselWidget extends StatelessWidget {
   CarouselWidget({super.key});
   List<CarouselModel> img = [
@@ -52,13 +53,20 @@ class CarouselWidget extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom:8,left:8,right:8),
                     child: ListTile(
-                      leading:  Image.network(i.gameimg),
+                      leading:   Container(
+                    height: 60,
+                    width: 60,
+                    decoration: BoxDecoration(
+                        image:
+                            DecorationImage(image: NetworkImage(i.gameimg)),
+                        borderRadius: BorderRadius.circular(10)),
+                  ),
                       title: Text(i.gtitle,style: const TextStyle(fontSize: 14,color: Colors.white,),),
                       subtitle:Text(i.gsubtitle,style: const TextStyle(fontSize: 9,color: Colors.white,),) ,
                       trailing: Column(
                         children: [
                           ElevatedButton(onPressed: (){}, child: const Text("Install",)),
-                          Text("In-app purchases",style: TextStyle(fontSize: 5,color: Colors.white),)
+                          const Text("In-app purchases",style: TextStyle(fontSize: 5,color: Colors.white),)
                         ],
                       ),
                     ),
