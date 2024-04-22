@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:playstore_application/screens/games_screen/gamecategory_screen.dart';
 import 'package:playstore_application/screens/games_screen/gameforu_screen.dart';
@@ -14,7 +15,9 @@ class GamesScreen extends StatelessWidget {
       length: 5,
       child:  Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const TabBar(
+         // dragStartBehavior: DragStartBehavior.down,
           indicatorPadding:EdgeInsets.zero ,
           isScrollable: true,
           tabs: [
